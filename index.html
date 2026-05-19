@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>金名德晉補習班｜暑期國中閱讀教室</title>
+    <title>金名德晉補習班｜暑期國中閱讀教室與個別指導</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -15,6 +15,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
+    <!-- 導覽列 -->
     <nav class="fixed w-full z-50 glass-card border-b border-sky-100">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
@@ -24,17 +25,21 @@
                 </div>
                 <span class="text-xl font-bold text-sky-900 tracking-tight">金名德晉補習班</span>
             </div>
-            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+            <div class="hidden md:flex space-x-6 font-medium text-slate-600 text-sm lg:text-base">
                 <a href="#features" class="hover:text-sky-600 transition">管理特色</a>
-                <a href="#pricing" class="hover:text-sky-600 transition">收費標準</a>
+                <a href="#points-pricing" class="hover:text-sky-600 transition">儲值方案</a>
+                <a href="#pricing" class="hover:text-sky-600 transition">扣點對照</a>
+                <a href="#tutoring" class="hover:text-sky-600 transition">個別指導</a>
+                <a href="#booking" class="hover:text-sky-600 transition text-sky-600 font-bold">線上預約</a>
                 <a href="#contact" class="hover:text-sky-600 transition">預約地點</a>
             </div>
-            <a href="tel:036572508" class="bg-sky-600 text-white px-5 py-2 rounded-full font-bold hover:bg-sky-700 transition shadow-md active:scale-95">
+            <a href="tel:036572508" class="bg-sky-600 text-white px-5 py-2 rounded-full font-bold hover:bg-sky-700 transition shadow-md active:scale-95 text-sm lg:text-base">
                 立即撥打
             </a>
         </div>
     </nav>
 
+    <!-- 主視覺區 -->
     <header class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 hero-gradient relative overflow-hidden">
         <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-sky-200/30 rounded-full blur-3xl"></div>
         <div class="max-w-5xl mx-auto text-center relative z-10">
@@ -43,97 +48,610 @@
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
                 </span>
-                <span>2026 暑期閱讀教室</span>
+                <span>2026 暑期高效學習專區</span>
             </div>
             <h1 class="text-4xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.15]">
-                暑期 <span class="text-sky-600">閱讀教室</span><br>高效學習的起點
+                暑期 <span class="text-sky-600">自學閱讀</span> × <span class="text-indigo-600">個別指導</span><br>量身打造最佳學習路徑
             </h1>
             <p class="text-lg md:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed px-4">
-                專為學生打造的高品質閱讀空間，嚴謹的管理與舒適的環境，<br class="hidden md:block">讓暑假的每一分鐘都發揮最大價值。
+                全新引進「儲值扣點制度」，點數放大最劃算。提供高品質安靜閱讀空間，更可彈性加購專業個別指導教學、數位全科影音學習。
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#pricing" class="w-full sm:w-auto bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-slate-800 transition shadow-xl text-center">
-                    查看方案
+                <a href="#booking" class="w-full sm:w-auto bg-sky-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-sky-700 transition shadow-xl text-center text-lg">
+                    📅 線上預約留位
                 </a>
-                <a href="https://share.google/kF7KmSOl6BN2IOaQD" target="_blank" class="w-full sm:w-auto bg-white border-2 border-slate-200 px-10 py-4 rounded-2xl font-bold hover:border-sky-400 hover:text-sky-600 transition flex items-center justify-center">
-                    導航至教室 📍
+                <a href="#points-pricing" class="w-full sm:w-auto bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-slate-800 transition shadow-xl text-center">
+                    查看儲值優惠
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- 特色介紹 -->
     <section id="features" class="py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
             <div class="text-center md:text-left space-y-4">
                 <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mx-auto md:mx-0 shadow-inner">🛡️</div>
-                <h3 class="text-2xl font-bold text-slate-900">嚴謹管理</h3>
-                <p class="text-slate-600 leading-relaxed">提供絕對靜謐的環境，並由專業師資巡視，確保學生維持高效專注力，不浪費任何學習時間。</p>
+                <h3 class="text-2xl font-bold text-slate-900">嚴謹自學管理</h3>
+                <p class="text-slate-600 leading-relaxed">提供絕對靜謐的讀書環境，由專業導師維持秩序並定時巡視，確保學生專注自修不分心。</p>
             </div>
             <div class="text-center md:text-left space-y-4">
-                <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-3xl mx-auto md:mx-0 shadow-inner">🛋️</div>
-                <h3 class="text-2xl font-bold text-slate-900">舒適環境</h3>
-                <p class="text-slate-600 leading-relaxed">人體工學桌椅與明亮的護眼照明，讓孩子在高強度的學習中依然能保持舒適感。</p>
+                <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center text-3xl mx-auto md:mx-0 shadow-inner">🎯</div>
+                <h3 class="text-2xl font-bold text-slate-900">個別指導加購</h3>
+                <p class="text-slate-600 leading-relaxed">讀書遇到難題？可即時加購一對一或個別指導教學服務，由專業師資為孩子解惑、建立核心觀念。</p>
             </div>
             <div class="text-center md:text-left space-y-4">
-                <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-3xl mx-auto md:mx-0 shadow-inner">🍱</div>
-                <h3 class="text-2xl font-bold text-slate-900">貼心供餐</h3>
-                <p class="text-slate-600 leading-relaxed">長時數方案提供營養均衡的午、晚餐，讓孩子足不出戶，省去家長接送與送餐的煩惱。</p>
+                <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-3xl mx-auto md:mx-0 shadow-inner">💻</div>
+                <h3 class="text-2xl font-bold text-slate-900">儲值扣點最彈性</h3>
+                <p class="text-slate-600 leading-relaxed">全台首創彈性扣點制，每次使用後 Line 群組即時推播，未用完點數還可全額退費或折抵其他學費！</p>
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="py-24 px-4 bg-slate-50">
+    <!-- 儲值扣點方案區塊 -->
+    <section id="points-pricing" class="py-24 px-4 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-sky-400 font-bold text-sm tracking-wider uppercase bg-sky-950/80 border border-sky-900/50 px-4 py-1.5 rounded-full">New Point System</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-4">全新彈性「儲值扣點制」</h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                    儲值面額越高、贈送點數越多，等同自修與個別指導享超值打折！沒用完可按比例退費或自由折抵其他學費。
+                </p>
+            </div>
+
+            <!-- 四種儲值方案 -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- 方案 1 -->
+                <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-sky-500/50 transition duration-300">
+                    <div>
+                        <span class="text-slate-500 text-xs font-bold uppercase tracking-wider">點數基礎班</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">輕鬆體驗</h3>
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold text-white">$1,000</span>
+                        </div>
+                        <div class="h-px bg-slate-900 my-4"></div>
+                        <div class="text-sky-400 font-bold text-lg mb-2">可獲得 10 點</div>
+                        <p class="text-slate-400 text-xs leading-relaxed">適合短時間、單次體驗或自修天數較少的同學，1 點等值於 $100 元價值。</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 text-center text-slate-500 text-xs">
+                        每點折合 $100.00 元
+                    </div>
+                </div>
+
+                <!-- 方案 2 -->
+                <div class="bg-slate-950 p-8 rounded-3xl border border-sky-950 flex flex-col justify-between hover:border-sky-500/50 transition duration-300 relative">
+                    <div class="absolute -top-3 right-4 bg-sky-500 text-slate-950 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider">
+                        省 $200!
+                    </div>
+                    <div>
+                        <span class="text-sky-400 text-xs font-bold uppercase tracking-wider">點數進階班</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">超值實惠</h3>
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold text-white">$10,000</span>
+                        </div>
+                        <div class="h-px bg-slate-900 my-4"></div>
+                        <div class="text-sky-400 font-bold text-lg mb-2">可獲得 102 點</div>
+                        <p class="text-slate-400 text-xs leading-relaxed">額外加碼贈送 2 點（現賺 $200 元），享受更劃算的儲值放大效應。</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 text-center text-sky-300 text-xs font-semibold">
+                        每點折合 $98.04 元 (約 98 折)
+                    </div>
+                </div>
+
+                <!-- 方案 3 -->
+                <div class="bg-slate-950 p-8 rounded-3xl border border-indigo-950 flex flex-col justify-between hover:border-indigo-500/50 transition duration-300 relative">
+                    <div class="absolute -top-3 right-4 bg-indigo-500 text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-wider">
+                        省 $500!
+                    </div>
+                    <div>
+                        <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">點數高手班</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">推薦首選</h3>
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold text-white">$20,000</span>
+                        </div>
+                        <div class="h-px bg-slate-900 my-4"></div>
+                        <div class="text-indigo-400 font-bold text-lg mb-2">可獲得 205 點</div>
+                        <p class="text-slate-400 text-xs leading-relaxed">熱門儲值方案！加贈高達 5 點（現賺 $500 元），用點數抵扣時折抵感最明顯！</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 text-center text-indigo-300 text-xs font-semibold">
+                        每點折合 $97.56 元 (約 97 折)
+                    </div>
+                </div>
+
+                <!-- 方案 4 -->
+                <div class="bg-indigo-950/40 p-8 rounded-3xl border-2 border-indigo-500 flex flex-col justify-between hover:border-indigo-400 transition duration-300 relative shadow-lg shadow-indigo-950">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-yellow-400 text-slate-950 px-4 py-1 rounded-full text-[11px] font-bold tracking-widest uppercase">
+                        CP值最高 享96折!
+                    </div>
+                    <div>
+                        <span class="text-yellow-400 text-xs font-bold uppercase tracking-wider">點數全能班</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">高效首選</h3>
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-4xl font-extrabold text-white">$30,000</span>
+                        </div>
+                        <div class="h-px bg-indigo-900 my-4"></div>
+                        <div class="text-yellow-300 font-bold text-lg mb-2">可獲得 310 點</div>
+                        <p class="text-slate-300 text-xs leading-relaxed">瘋狂加贈 10 點（直接現賺 $1,000 元價值）！長時數自修、個別指導學員的最佳精省方案。</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-indigo-900 text-center text-yellow-300 text-xs font-bold">
+                        每點折合 $96.77 元 (約 96 折)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Line群組即時告知與退費承諾區塊 -->
+            <div class="grid md:grid-cols-12 gap-8 items-center bg-slate-950 border border-slate-800 rounded-[2.5rem] p-8 md:p-12">
+                <div class="md:col-span-7 space-y-6">
+                    <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <span class="text-3xl">📱</span> LINE 群組即時扣點推播通知
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                        為讓家長完全掌控孩子的學習進度與費用去向，每次自修使用完畢後，補習班導師會<strong>主動於 Line 專屬親師群組</strong>通報今日使用的時數、扣除點數以及剩餘點數。資訊絕對公開、透明，不產生任何灰色地帶！
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <div class="bg-slate-900/60 border border-slate-850 p-4 rounded-2xl flex-1">
+                            <span class="text-sky-400 font-bold text-sm block mb-1">🛡️ 點數保障承諾</span>
+                            <span class="text-slate-400 text-xs leading-relaxed block">
+                                暑期結束若有未扣完的點數，您可以隨時選擇按原始剩餘比例進行退費，或直接 100% 轉換為補習班其他學期個別指導或班級學費折抵，毫無後顧之憂。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Line 訊息模擬畫面 -->
+                <div class="md:col-span-5 w-full bg-emerald-50 text-slate-950 rounded-3xl p-6 border-4 border-emerald-100 shadow-inner font-sans relative">
+                    <div class="absolute top-3 right-4 bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Line 模擬通知</div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold">金</div>
+                        <div>
+                            <span class="font-bold text-xs text-slate-800 block">金名德晉導師群</span>
+                            <span class="text-[9px] text-slate-400">剛剛</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-4 text-xs border border-emerald-100 shadow-sm space-y-2 text-slate-700">
+                        <p class="font-bold text-emerald-700 border-b border-slate-100 pb-1.5">【今日閱讀教室自修通報】</p>
+                        <p>親愛的王小明家長您好：</p>
+                        <p>小明今日已自修完畢，下課時間已到。今日自修表現非常專注！</p>
+                        <p class="bg-emerald-50/50 p-2 rounded-lg text-[11px] leading-relaxed">
+                            ⏱️ 今日自修時間：4 小時 以上<br>
+                            🍱 今日加購餐點：晚餐 1 份<br>
+                            📉 今日扣除點數：<span class="font-bold text-red-600">8 點</span> (自修 7 點 + 餐點 1 點)<br>
+                            💰 目前剩餘點數：<span class="font-bold text-emerald-600">229 點</span>
+                        </p>
+                        <p class="text-[10px] text-slate-400 pt-1">※ 小明今日主要複習國文閱讀與英文單字，特此通報。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 閱讀教室自學收費標準 (扣點對照) -->
+    <section id="pricing" class="py-24 px-4 bg-slate-50 border-b border-slate-200">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">閱讀教室收費標準</h2>
-                <p class="text-slate-500">透明合理的價格，為家長提供最安心的選擇</p>
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold mb-3">
+                    自主讀書空間
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">自修閱讀教室：點數折抵對照表</h2>
+                <p class="text-slate-500 font-medium">✨ 本區僅提供靜謐讀書場地（自學自修，不含教學服務）。1 點等值 100 元，若儲值高階方案則點數實際成本更低！</p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- 方案 A -->
-                <div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 pricing-card">
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">單次基本費</h3>
-                    <div class="flex items-baseline mb-6">
-                        <span class="text-4xl font-bold text-slate-900">$500</span>
-                        <span class="text-slate-400 ml-2">/ 次</span>
+                <div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 pricing-card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">單次自修 (4小時內)</h3>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-bold text-slate-900">5 點</span>
+                            <span class="text-slate-400 ml-2">/ 次 (等值 $500 元)</span>
+                        </div>
+                        <ul class="space-y-4 text-slate-600 mb-8">
+                            <li class="flex items-center">
+                                <span class="text-sky-500 mr-2">✓</span> 使用時間：4 小時以內
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-sky-500 mr-2">✓</span> 進場即進行點數扣除
+                            </li>
+                            <li class="flex items-center text-slate-450">
+                                <span class="text-sky-500 mr-2">✓</span> 人體工學桌椅與護眼照度
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="space-y-4 text-slate-600 mb-8">
-                        <li class="flex items-center">
-                            <span class="text-sky-500 mr-2">✓</span> 使用時間：4 小時以內
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-sky-500 mr-2">✓</span> 進場即收費
-                        </li>
-                    </ul>
                 </div>
 
                 <!-- 方案 B -->
-                <div class="bg-sky-600 p-8 md:p-12 rounded-[2rem] shadow-xl text-white pricing-card relative">
+                <div class="bg-sky-600 p-8 md:p-12 rounded-[2rem] shadow-xl text-white pricing-card relative flex flex-col justify-between">
                     <div class="absolute -top-4 -right-4 bg-yellow-400 text-slate-900 px-6 py-2 rounded-full text-sm font-bold shadow-lg transform rotate-6">
-                        熱門首選！
+                        最推自修！
                     </div>
-                    <h3 class="text-xl font-bold mb-2">長時數優惠</h3>
-                    <div class="flex items-baseline mb-6">
-                        <span class="text-4xl font-bold">$800</span>
-                        <span class="text-sky-100 ml-2">/ 次</span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">長時數自修 (4小時以上)</h3>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-bold">7 點</span>
+                            <span class="text-sky-100 ml-2">/ 次 (等值 $700 元)</span>
+                        </div>
+                        <ul class="space-y-4 text-sky-50 mb-8">
+                            <li class="flex items-center font-bold text-yellow-300">
+                                <span class="mr-2">★</span> 本方案不含餐點
+                            </li>
+                            <li class="flex items-center">
+                                <span class="mr-2">✓</span> 使用時間：4 小時以上
+                            </li>
+                            <li class="flex items-center">
+                                <span class="mr-2">✓</span> 全日專注不間斷，最長至 21:00
+                            </li>
+                            <li class="flex items-center">
+                                <span class="mr-2">✓</span> 可自由加購營養代訂餐點
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="space-y-4 text-sky-50 mb-8">
-                        <li class="flex items-center font-bold text-yellow-300">
-                            <span class="mr-2">★</span> 含 1 份午餐 / 晚餐
-                        </li>
-                        <li class="flex items-center">
-                            <span class="mr-2">✓</span> 使用時間：4 小時以上
-                        </li>
-                        <li class="flex items-center">
-                            <span class="mr-2">✓</span> 全日專注不間斷
-                        </li>
-                    </ul>
                 </div>
             </div>
-            <p class="mt-12 text-center text-slate-400 text-sm">※ 可預約時間以補習班上班時間為準</p>
+            <p class="mt-12 text-center text-slate-400 text-sm">※ 閱讀教室預約時間以補習班上班時間為準</p>
         </div>
     </section>
 
+    <!-- 個別指導學費收費標準 -->
+    <section id="tutoring" class="py-24 px-4 bg-slate-900 text-white relative overflow-hidden border-b border-slate-950">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-full text-xs font-bold mb-3">
+                    PRO 額外教學服務
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">個別指導點數折抵標準</h2>
+                <p class="text-slate-400 text-lg">公開透明，皆可直接使用「儲值點數」進行扣點折抵！</p>
+            </div>
+
+            <!-- 收費標準表格 (響應式設計) -->
+            <div class="bg-slate-950 rounded-[2rem] border border-slate-800 shadow-2xl overflow-hidden mb-12">
+                <!-- 行動裝置左右滑動提示 -->
+                <div class="block md:hidden text-center py-2 bg-indigo-950 text-indigo-300 text-xs border-b border-indigo-900 animate-pulse">
+                    ← 左右滑動查看完整表格資訊 →
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse min-w-[700px]">
+                        <thead>
+                            <tr class="border-b border-slate-800">
+                                <th class="p-8 text-xl font-bold text-slate-300 w-1/3">師資類別</th>
+                                <th class="p-8 bg-blue-950/40 border-x border-slate-850 w-1/3">
+                                    <div class="text-indigo-400 text-2xl font-bold">一對一家教</div>
+                                    <div class="text-slate-400 text-sm font-normal mt-1">1位老師對1位學生</div>
+                                </th>
+                                <th class="p-8 bg-emerald-950/30 w-1/3">
+                                    <div class="text-emerald-400 text-2xl font-bold">個別指導</div>
+                                    <div class="text-slate-400 text-sm font-normal mt-1">1位老師對2位以上</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-850">
+                            <!-- 金名德晉老師 -->
+                            <tr class="hover:bg-slate-900/40 transition duration-150">
+                                <td class="p-8">
+                                    <h4 class="text-xl font-bold text-white mb-1">金名德晉老師</h4>
+                                    <p class="text-slate-400 text-sm">專業資深教師團隊</p>
+                                </td>
+                                <td class="p-8 bg-blue-950/20 border-x border-slate-850">
+                                    <div class="flex items-baseline">
+                                        <span class="text-3xl font-extrabold text-white">8 點</span>
+                                        <span class="text-slate-500 ml-1.5 text-sm">/ 小時 (等值 $800)</span>
+                                    </div>
+                                </td>
+                                <td class="p-8 bg-emerald-950/15">
+                                    <div class="flex items-baseline">
+                                        <span class="text-3xl font-extrabold text-white">5.5 點</span>
+                                        <span class="text-slate-500 ml-1.5 text-sm">/ 小時 (等值 $550)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 總班主任 -->
+                            <tr class="hover:bg-slate-900/40 transition duration-150">
+                                <td class="p-8">
+                                    <h4 class="text-xl font-bold text-indigo-300 mb-1">總班主任</h4>
+                                    <p class="text-slate-400 text-sm">二十年教學經驗、師鐸獎得主</p>
+                                </td>
+                                <td class="p-8 bg-blue-950/20 border-x border-slate-850">
+                                    <div class="flex items-baseline">
+                                        <span class="text-3xl font-extrabold text-yellow-400">15 點</span>
+                                        <span class="text-slate-500 ml-1.5 text-sm">/ 小時 (等值 $1,500)</span>
+                                    </div>
+                                </td>
+                                <td class="p-8 bg-emerald-950/15">
+                                    <div class="flex items-baseline">
+                                        <span class="text-3xl font-extrabold text-emerald-400">8 點</span>
+                                        <span class="text-slate-500 ml-1.5 text-sm">/ 小時 (等值 $800)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 加購與數位影音學習服務區塊 -->
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <!-- 數位學習卡片 -->
+                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl flex flex-col justify-between hover:border-indigo-500/50 transition duration-300">
+                    <div class="flex items-start gap-4">
+                        <span class="text-4xl p-3 bg-indigo-950/60 rounded-2xl">💻</span>
+                        <div>
+                            <h4 class="font-bold text-xl text-white">國中 / 高中全科數位影音學習</h4>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">提供名師全科精緻數位影音課程，適合想針對弱點學科快速補強、超前預習的同學。</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-900 pt-4">
+                        <span class="text-slate-400 text-sm">自主彈性點閱</span>
+                        <span class="text-indigo-400 font-extrabold text-2xl">2 點 <span class="text-sm font-normal text-slate-500">/ 小時 (等值 $200)</span></span>
+                    </div>
+                </div>
+
+                <!-- 訂餐服務卡片 -->
+                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
+                    <div class="flex items-start gap-4">
+                        <span class="text-4xl p-3 bg-emerald-950/40 rounded-2xl">🍱</span>
+                        <div>
+                            <h4 class="font-bold text-xl text-white">貼心營養餐點加購代訂</h4>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">專為長時數留班同學準備，由補習班統一代訂乾淨營養的餐點，省去同學外出與家長送餐負擔。</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-900 pt-4">
+                        <span class="text-slate-400 text-sm">午餐 / 晚餐彈性代訂</span>
+                        <span class="text-emerald-400 font-extrabold text-2xl">1 點 <span class="text-sm font-normal text-slate-500">/ 每餐 (等值 $110)</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-12 text-center text-slate-500 text-sm">💡 提示：以上個別指導與影音學習為自修閱讀教室學員專屬加購服務，名額有限，請提前預約。</p>
+        </div>
+    </section>
+
+    <!-- 家長線上預約表單區塊 -->
+    <section id="booking" class="py-24 px-4 bg-gradient-to-b from-sky-50 to-white relative overflow-hidden">
+        <!-- 背景裝飾微光 -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-sky-200/40 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-10 w-72 h-72 bg-indigo-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-sky-600 font-bold text-sm tracking-wider uppercase bg-sky-100 px-4 py-1.5 rounded-full">Reserve Online</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-950 mt-4 mb-3">線上座位與課程預約</h2>
+                <p class="text-slate-500">歡迎家長填寫下方預約表單，我們將由專人與您聯繫確認</p>
+            </div>
+
+            <!-- 表單卡片 -->
+            <form id="reservation-form" class="bg-white rounded-[2.5rem] p-6 md:p-12 shadow-xl border border-sky-100/80 space-y-8">
+                
+                <!-- 1. 基本資料 -->
+                <div>
+                    <h3 class="text-lg font-bold text-sky-950 mb-4 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <span class="text-xl">👤</span> 學生與家長基本資料
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- 姓名 -->
+                        <div>
+                            <label class="block text-slate-750 font-medium mb-2 text-sm" for="student-name">學生姓名 <span class="text-red-500">*</span></label>
+                            <input type="text" id="student-name" required placeholder="請輸入姓名"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+                        </div>
+                        <!-- 年級 -->
+                        <div>
+                            <label class="block text-slate-750 font-medium mb-2 text-sm" for="student-grade">學生年級 <span class="text-red-500">*</span></label>
+                            <select id="student-grade" required
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition bg-white">
+                                <option value="" disabled selected>請選擇年級</option>
+                                <option value="國小/其他">國小 / 其他</option>
+                                <option value="國中一年級">國中一年級</option>
+                                <option value="國中二年級">國中二年級</option>
+                                <option value="國中三年級">國中三年級</option>
+                                <option value="高中一年級">高中一年級</option>
+                                <option value="高中二年級">高中二年級</option>
+                                <option value="高中三年級">高中三年級</option>
+                            </select>
+                        </div>
+                        <!-- 電話 -->
+                        <div>
+                            <label class="block text-slate-750 font-medium mb-2 text-sm" for="parent-phone">家長聯絡電話 <span class="text-red-500">*</span></label>
+                            <input type="tel" id="parent-phone" required placeholder="例如：0912345678"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 預約日期選擇區 (全新雙模式切換) -->
+                <div>
+                    <h3 class="text-lg font-bold text-sky-950 mb-2 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <span class="text-xl">📅</span> 預約日期方式 <span class="text-red-500">*</span>
+                    </h3>
+                    <p class="text-xs text-slate-400 mb-4">請選擇最符合您習慣的日期勾選方式（單次/連續日期，或固定每週重複自修）：</p>
+
+                    <!-- 模式頁籤切換器 -->
+                    <div class="flex gap-2 p-1 bg-slate-100 rounded-xl mb-6 max-w-md">
+                        <button type="button" id="tab-date-range" class="flex-1 py-2 text-sm font-bold rounded-lg bg-white text-sky-950 shadow-sm transition">
+                            📅 特定日期 / 區間
+                        </button>
+                        <button type="button" id="tab-weekly-recur" class="flex-1 py-2 text-sm font-bold rounded-lg text-slate-600 hover:text-sky-950 transition">
+                            🔁 每週固定天數
+                        </button>
+                    </div>
+
+                    <!-- 模式 1 內容：日期區間 -->
+                    <div id="date-range-panel" class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-slate-750 font-medium mb-2 text-sm" for="reserve-start-date">開始日期</label>
+                            <input type="date" id="reserve-start-date"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label class="block text-slate-750 font-medium mb-2 text-sm" for="reserve-end-date">結束日期 (單日預約可與開始日期相同)</label>
+                            <input type="date" id="reserve-end-date"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+                        </div>
+                    </div>
+
+                    <!-- 模式 2 內容：固定每週天數 -->
+                    <div id="weekly-recur-panel" class="hidden space-y-4">
+                        <label class="block text-slate-750 font-medium text-sm">選擇每週自修天數 (可多選)：</label>
+                        <div class="flex flex-wrap gap-3">
+                            <label class="flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 hover:border-sky-500 hover:bg-sky-50 cursor-pointer select-none transition">
+                                <input type="checkbox" name="weekly-days" value="週一" class="h-4 w-4 text-sky-600 rounded">
+                                <span class="text-sm font-bold text-slate-800">每週一</span>
+                            </label>
+                            <label class="flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 hover:border-sky-500 hover:bg-sky-50 cursor-pointer select-none transition">
+                                <input type="checkbox" id="weekly-tue" name="weekly-days" value="週二" class="h-4 w-4 text-sky-600 rounded">
+                                <span class="text-sm font-bold text-slate-800">每週二 <span class="text-xs text-indigo-500">(限夜間)</span></span>
+                            </label>
+                            <label class="flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 hover:border-sky-500 hover:bg-sky-50 cursor-pointer select-none transition">
+                                <input type="checkbox" name="weekly-days" value="週三" class="h-4 w-4 text-sky-600 rounded">
+                                <span class="text-sm font-bold text-slate-800">每週三</span>
+                            </label>
+                            <label class="flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 hover:border-sky-500 hover:bg-sky-50 cursor-pointer select-none transition">
+                                <input type="checkbox" name="weekly-days" value="週四" class="h-4 w-4 text-sky-600 rounded">
+                                <span class="text-sm font-bold text-slate-800">每週四</span>
+                            </label>
+                            <label class="flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 hover:border-sky-500 hover:bg-sky-50 cursor-pointer select-none transition">
+                                <input type="checkbox" name="weekly-days" value="週五" class="h-4 w-4 text-sky-600 rounded">
+                                <span class="text-sm font-bold text-slate-800">每週五</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 預約時段與限制 (含週二限制警示) -->
+                <div>
+                    <h3 class="text-lg font-bold text-sky-950 mb-2 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <span class="text-xl">⏰</span> 預約時段 / 詳細時間 <span class="text-red-500">*</span>
+                    </h3>
+                    
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 mb-4 text-xs md:text-sm text-indigo-950 leading-relaxed">
+                        📌 <strong>班級營業自修時間：</strong><br>
+                        • 平日 (一、三、四、五)：<strong>08:00 ~ 21:00</strong><br>
+                        • 週二特別配合：<strong>僅開放 17:00 ~ 21:00</strong> 的時段 (日間時段不提供自學閱讀服務)
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 items-start">
+                        <div>
+                            <label class="block text-slate-750 font-medium mb-2 text-sm" for="reserve-time">預約自修時段 / 時間區段</label>
+                            <input type="text" id="reserve-time" required placeholder="例如：平日 09:00~16:00 或 週二 18:00~21:00"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+                            
+                            <!-- 週二智慧提示（動態顯示） -->
+                            <div id="tuesday-warning" class="mt-3 p-3 bg-rose-50 border border-rose-200 rounded-xl text-rose-800 text-xs hidden animate-pulse">
+                                ⚠️ <strong>親愛的家長注意：</strong> 您的日期中包含「週二」，當天請務必選擇 <strong>17:00 ~ 21:00</strong> 間的夜間時段。若有疑慮，班主任將主動致電協調喔！
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-slate-750 font-medium text-sm">快速時段選擇（可直接點擊帶入）：</label>
+                            <div class="flex flex-wrap gap-2">
+                                <button type="button" onclick="setTimeVal('平日整天自修 (08:00~21:00)')" class="px-3 py-1.5 bg-slate-100 hover:bg-sky-100 hover:text-sky-800 rounded-lg text-xs font-semibold text-slate-600 transition">
+                                    ☀️ 平日整天 (08:00~21:00)
+                                </button>
+                                <button type="button" onclick="setTimeVal('平日上午半日 (08:00~12:00)')" class="px-3 py-1.5 bg-slate-100 hover:bg-sky-100 hover:text-sky-800 rounded-lg text-xs font-semibold text-slate-600 transition">
+                                    🌅 平日上午 (08:00~12:00)
+                                </button>
+                                <button type="button" onclick="setTimeVal('平日下午半日 (13:00~17:00)')" class="px-3 py-1.5 bg-slate-100 hover:bg-sky-100 hover:text-sky-800 rounded-lg text-xs font-semibold text-slate-600 transition">
+                                    🌇 平日下午 (13:00~17:00)
+                                </button>
+                                <button type="button" id="btn-tue-quick" onclick="setTimeVal('週二專屬時段 (17:00~21:00)')" class="px-3 py-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition">
+                                    🌙 週二夜間限定 (17:00~21:00)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. 希望的服務內容 -->
+                <div>
+                    <h3 class="text-lg font-bold text-sky-950 mb-4 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <span class="text-xl">✨</span> 希望的服務內容 (可多選)
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <!-- 閱讀教室 -->
+                        <label class="flex items-start p-4 rounded-2xl border border-slate-100 hover:border-sky-300 bg-slate-50/50 hover:bg-sky-50/10 cursor-pointer transition">
+                            <input type="checkbox" name="services" value="閱讀教室" class="mt-1 mr-3 h-5 w-5 rounded text-sky-600 focus:ring-sky-500 border-slate-300">
+                            <div>
+                                <span class="font-bold text-slate-900 block">閱讀教室（單純讀書場地，自學自修，不含教學）</span>
+                                <span class="text-slate-500 text-sm mt-0.5 block">單次4小時扣 5 點，長時數扣 7 點。</span>
+                            </div>
+                        </label>
+
+                        <!-- 個別指導 -->
+                        <div class="p-4 rounded-2xl border border-slate-100 hover:border-indigo-300 bg-slate-50/50 hover:bg-indigo-50/10 transition">
+                            <label class="flex items-start cursor-pointer">
+                                <input type="checkbox" id="service-tutoring" name="services" value="個別指導" class="mt-1 mr-3 h-5 w-5 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300">
+                                <div>
+                                    <span class="font-bold text-slate-900 block">個別指導（額外教學服務）</span>
+                                    <span class="text-slate-500 text-sm mt-0.5 block">針對學生個別盲點與學科難題進行客製化上課解惑。</span>
+                                </div>
+                            </label>
+
+                            <!-- 個別指導子選項 -->
+                            <div id="instructor-selection" class="mt-4 pl-8 border-l-2 border-indigo-100 space-y-2 hidden">
+                                <p class="text-sm font-semibold text-indigo-950 mb-2">請選擇希望的個別指導老師：</p>
+                                <div class="flex flex-wrap gap-4">
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="radio" name="instructor" value="金名德晉老師" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-slate-300">
+                                        <span class="ml-2 text-slate-700 text-sm font-medium">金名德晉老師 (資深師資團隊)</span>
+                                    </label>
+                                    <label class="inline-flex items-center cursor-pointer">
+                                        <input type="radio" name="instructor" value="總班主任" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-slate-300">
+                                        <span class="ml-2 text-slate-700 text-sm font-medium">總班主任 (二十年教學、師鐸獎)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 數位影音學習 -->
+                        <label class="flex items-start p-4 rounded-2xl border border-slate-100 hover:border-emerald-300 bg-slate-50/50 hover:bg-emerald-50/10 cursor-pointer transition">
+                            <input type="checkbox" name="services" value="數位影音學習" class="mt-1 mr-3 h-5 w-5 rounded text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <div>
+                                <span class="font-bold text-slate-900 block">國中 / 高中全科數位影音學習</span>
+                                <span class="text-slate-500 text-sm mt-0.5 block">名師精緻影音全科課程，自主點閱彈性補強與超前進度。</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 5. 餐點加購 -->
+                <div>
+                    <h3 class="text-lg font-bold text-sky-950 mb-4 flex items-center gap-2 border-b border-slate-100 pb-2">
+                        <span class="text-xl">🍱</span> 貼心營養餐點加購代訂 (可用儲值扣除點數)
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <label class="flex items-center p-4 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-emerald-50/10 cursor-pointer transition">
+                            <input type="checkbox" name="meals" value="代訂午餐" class="h-5 w-5 rounded text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <span class="ml-3 font-medium text-slate-800">加購午餐（扣除 1 點 / 餐）</span>
+                        </label>
+                        <label class="flex items-center p-4 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-emerald-50/10 cursor-pointer transition">
+                            <input type="checkbox" name="meals" value="代訂晚餐" class="h-5 w-5 rounded text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <span class="ml-3 font-medium text-slate-800">加購晚餐（扣除 1 點 / 餐）</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 備註欄位 -->
+                <div>
+                    <label class="block text-slate-750 font-medium mb-2 text-sm" for="parent-note">特殊需求 / 備註說明（選填）</label>
+                    <textarea id="parent-note" rows="3" placeholder="如有特定的學科指導需求、期望加強的單元，或攜帶特定學習用書，請在這邊告訴我們..."
+                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"></textarea>
+                </div>
+
+                <!-- 送出按鈕 -->
+                <div class="pt-4">
+                    <button type="submit" 
+                        class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg active:scale-[0.99] transition duration-150">
+                        送出預約資料 🚀
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 聯絡與導航 -->
     <section id="contact" class="py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto rounded-[3rem] bg-slate-900 text-white p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative">
             <div class="absolute bottom-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl"></div>
@@ -177,6 +695,7 @@
         </div>
     </section>
 
+    <!-- 頁尾 -->
     <footer class="py-12 bg-slate-50 border-t border-slate-200">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center space-x-2">
@@ -188,7 +707,37 @@
         </div>
     </footer>
 
+    <!-- 線上預約完成彈窗 (Modal) -->
+    <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm hidden">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 shadow-2xl border border-sky-100 transform scale-95 transition-all duration-300">
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">✓</div>
+                <h3 class="text-2xl font-bold text-slate-950">預約資料填寫成功！</h3>
+                <p class="text-slate-500 text-sm mt-1">您可複製下方整合訊息傳送給補習班 LINE</p>
+            </div>
+            
+            <!-- 預約明細框 -->
+            <div class="bg-slate-50 p-5 rounded-2xl text-left border border-slate-100 text-slate-700 text-sm space-y-2 mb-6 font-mono leading-relaxed max-h-60 overflow-y-auto" id="modal-summary">
+                <!-- 由 JavaScript 動態填入 -->
+            </div>
+
+            <!-- 用於複製的隱藏欄位 -->
+            <textarea id="copy-helper" class="absolute left-[-9999px]"></textarea>
+
+            <div class="space-y-3">
+                <button id="btn-copy" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 rounded-xl transition shadow-md flex items-center justify-center gap-2">
+                    <span>📋</span> 複製預約訊息 (推薦貼給 LINE)
+                </button>
+                <button id="btn-close-modal" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-3.5 rounded-xl transition">
+                    關閉視窗
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 網頁互動 Script -->
     <script>
+        // 1. 滾動時導覽列陰影效果
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 10) {
@@ -196,6 +745,252 @@
             } else {
                 nav.classList.remove('shadow-lg', 'border-sky-200/50');
             }
+        });
+
+        // 2. 個別指導子選項顯隱邏輯
+        const tutoringCheckbox = document.getElementById('service-tutoring');
+        const instructorSelection = document.getElementById('instructor-selection');
+
+        tutoringCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                instructorSelection.classList.remove('hidden');
+                const radioButtons = document.getElementsByName('instructor');
+                if (!radioButtons[0].checked && !radioButtons[1].checked) {
+                    radioButtons[0].checked = true;
+                }
+            } else {
+                instructorSelection.classList.add('hidden');
+            }
+        });
+
+        // 3. 全新雙日期預約模式切換邏輯
+        const tabDateRange = document.getElementById('tab-date-range');
+        const tabWeeklyRecur = document.getElementById('tab-weekly-recur');
+        const dateRangePanel = document.getElementById('date-range-panel');
+        const weeklyRecurPanel = document.getElementById('weekly-recur-panel');
+
+        const reserveStartDateInput = document.getElementById('reserve-start-date');
+        const reserveEndDateInput = document.getElementById('reserve-end-date');
+
+        let activeDateMode = 'range'; // 'range' 或 'weekly'
+
+        tabDateRange.addEventListener('click', () => {
+            activeDateMode = 'range';
+            tabDateRange.className = "flex-1 py-2 text-sm font-bold rounded-lg bg-white text-sky-950 shadow-sm transition";
+            tabWeeklyRecur.className = "flex-1 py-2 text-sm font-bold rounded-lg text-slate-600 hover:text-sky-950 transition";
+            dateRangePanel.classList.remove('hidden');
+            weeklyRecurPanel.classList.add('hidden');
+            checkTuesdayWarning();
+        });
+
+        tabWeeklyRecur.addEventListener('click', () => {
+            activeDateMode = 'weekly';
+            tabWeeklyRecur.className = "flex-1 py-2 text-sm font-bold rounded-lg bg-white text-sky-950 shadow-sm transition";
+            tabDateRange.className = "flex-1 py-2 text-sm font-bold rounded-lg text-slate-600 hover:text-sky-950 transition";
+            weeklyRecurPanel.classList.remove('hidden');
+            dateRangePanel.classList.add('hidden');
+            checkTuesdayWarning();
+        });
+
+        // 4. 週二時間限制智慧判斷邏輯
+        const tuesdayWarning = document.getElementById('tuesday-warning');
+        const weeklyTueCheckbox = document.getElementById('weekly-tue');
+
+        function checkTuesdayWarning() {
+            let hasTuesday = false;
+
+            if (activeDateMode === 'weekly') {
+                if (weeklyTueCheckbox.checked) {
+                    hasTuesday = true;
+                }
+            } else {
+                const startDateStr = reserveStartDateInput.value;
+                const endDateStr = reserveEndDateInput.value;
+
+                if (startDateStr) {
+                    const start = new Date(startDateStr);
+                    // 檢查開始日期是否為週二 (Date.getDay() 2 代表週二)
+                    if (start.getDay() === 2) {
+                        hasTuesday = true;
+                    }
+
+                    if (endDateStr) {
+                        const end = new Date(endDateStr);
+                        // 若為區間，跑迴圈檢查中間是否包含任何週二
+                        let current = new Date(start);
+                        while (current <= end) {
+                            if (current.getDay() === 2) {
+                                hasTuesday = true;
+                                break;
+                            }
+                            current.setDate(current.getDate() + 1);
+                        }
+                    }
+                }
+            }
+
+            if (hasTuesday) {
+                tuesdayWarning.classList.remove('hidden');
+            } else {
+                tuesdayWarning.classList.add('hidden');
+            }
+        }
+
+        // 監聽各種可能產生週二的輸入點
+        reserveStartDateInput.addEventListener('change', checkTuesdayWarning);
+        reserveEndDateInput.addEventListener('change', checkTuesdayWarning);
+        
+        const weeklyCheckboxes = document.querySelectorAll('input[name="weekly-days"]');
+        weeklyCheckboxes.forEach(cb => {
+            cb.addEventListener('change', checkTuesdayWarning);
+        });
+
+        // 5. 快速帶入時間功能
+        function setTimeVal(val) {
+            document.getElementById('reserve-time').value = val;
+        }
+
+        // 6. 表單送出處理
+        const form = document.getElementById('reservation-form');
+        const modal = document.getElementById('booking-modal');
+        const modalSummary = document.getElementById('modal-summary');
+        const copyHelper = document.getElementById('copy-helper');
+        const btnCopy = document.getElementById('btn-copy');
+        const btnCloseModal = document.getElementById('btn-close-modal');
+
+        let formattedTextForCopy = "";
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // 取得根本資料
+            const name = document.getElementById('student-name').value;
+            const grade = document.getElementById('student-grade').value;
+            const phone = document.getElementById('parent-phone').value;
+            const time = document.getElementById('reserve-time').value;
+            const note = document.getElementById('parent-note').value;
+
+            // 根據模式處理預約日期
+            let dateDisplay = "";
+            if (activeDateMode === 'range') {
+                const start = reserveStartDateInput.value;
+                const end = reserveEndDateInput.value;
+                
+                if (!start) {
+                    alert("請選擇預約開始日期！");
+                    return;
+                }
+                
+                if (start === end || !end) {
+                    dateDisplay = `${start} (單日自修)`;
+                } else {
+                    dateDisplay = `${start} 至 ${end} (連續區間)`;
+                }
+            } else {
+                // 每週固定天數
+                const selectedDays = [];
+                const dayCbs = document.querySelectorAll('input[name="weekly-days"]:checked');
+                dayCbs.forEach(cb => {
+                    selectedDays.push(cb.value);
+                });
+
+                if (selectedDays.length === 0) {
+                    alert("請至少選擇一個每週固定的自修天數！");
+                    return;
+                }
+                dateDisplay = `每週固定天數：${selectedDays.join('、')}`;
+            }
+
+            // 取得勾選服務
+            const serviceCheckboxes = document.querySelectorAll('input[name="services"]:checked');
+            let selectedServices = [];
+            serviceCheckboxes.forEach(cb => {
+                if (cb.value === '個別指導') {
+                    const instructor = document.querySelector('input[name="instructor"]:checked')?.value || '金名德晉老師';
+                    selectedServices.push(`個別指導 (${instructor})`);
+                } else {
+                    selectedServices.push(cb.value);
+                }
+            });
+
+            if (selectedServices.length === 0) {
+                // 如果沒有勾選服務，預設為自學閱讀教室
+                selectedServices.push('閱讀教室（自修）');
+            }
+
+            // 取得加購餐點
+            const mealCheckboxes = document.querySelectorAll('input[name="meals"]:checked');
+            let selectedMeals = [];
+            mealCheckboxes.forEach(cb => {
+                selectedMeals.push(cb.value);
+            });
+
+            // 組成網頁 Modal 預約總覽
+            let summaryHTML = `
+                <p><strong>學生姓名：</strong> ${name}</p>
+                <p><strong>學生年級：</strong> ${grade}</p>
+                <p><strong>家長電話：</strong> ${phone}</p>
+                <p><strong>預約日期：</strong> ${dateDisplay}</p>
+                <p><strong>預約時段：</strong> ${time}</p>
+                <p><strong>預約服務：</strong><br><span class="text-indigo-600 font-semibold">• ${selectedServices.join('<br>• ')}</span></p>
+                <p><strong>加購餐點：</strong> ${selectedMeals.length > 0 ? selectedMeals.join('、') : '無加購'}</p>
+                ${note ? `<p><strong>備註說明：</strong> ${note}</p>` : ''}
+            `;
+
+            // 組成 LINE 複製純文字範本 (扣點好康提醒)
+            formattedTextForCopy = `【金名德晉補習班 暑期預約確認單】\n`;
+            formattedTextForCopy += `學生姓名：${name}\n`;
+            formattedTextForCopy += `學生年級：${grade}\n`;
+            formattedTextForCopy += `聯絡電話：${phone}\n`;
+            formattedTextForCopy += `預約日期：${dateDisplay}\n`;
+            formattedTextForCopy += `預約時段：${time}\n`;
+            formattedTextForCopy += `預約服務：${selectedServices.join('、')}\n`;
+            formattedTextForCopy += `點數加購餐點：${selectedMeals.length > 0 ? selectedMeals.join('、') : '無'}\n`;
+            if (note) formattedTextForCopy += `家長備註：${note}\n`;
+            formattedTextForCopy += `--------------------------\n`;
+            formattedTextForCopy += `※ 本班採「儲值扣點制（1000元=10點）」，餘點可隨時按比例退費或轉學費折抵。每次使用後均會於 Line 主動通報剩餘點數，保障家長權益。送出後我們將主動與您聯絡核對時間與剩餘點數細節！`;
+
+            // 寫入並開啟彈窗
+            modalSummary.innerHTML = summaryHTML;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // 鎖定底層滾動
+        });
+
+        // 7. 一鍵複製功能 (相容 iframe 安全機制)
+        btnCopy.addEventListener('click', function() {
+            copyHelper.value = formattedTextForCopy;
+            copyHelper.select();
+            copyHelper.setSelectionRange(0, 99999); // 手機端相容
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    btnCopy.innerHTML = "<span>✓</span> 預約資訊已成功複製！";
+                    btnCopy.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                    btnCopy.classList.add('bg-emerald-600', 'hover:bg-emerald-700');
+                    
+                    setTimeout(() => {
+                        btnCopy.innerHTML = "<span>📋</span> 複製預約訊息 (推薦貼給 LINE)";
+                        btnCopy.classList.remove('bg-emerald-600', 'hover:bg-emerald-700');
+                        btnCopy.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
+                    }, 2500);
+                } else {
+                    alert("複製失敗，請手動複製。");
+                }
+            } catch (err) {
+                alert("此瀏覽器不支援一鍵複製，請手動圈選複製摘要內容。");
+            }
+        });
+
+        // 8. 關閉彈窗
+        btnCloseModal.addEventListener('click', function() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // 恢復底層滾動
+            form.reset(); // 重設表單
+            instructorSelection.classList.add('hidden'); // 收合指導老師
+            tuesdayWarning.classList.add('hidden'); // 收合週二提示
+            activeDateMode = 'range'; // 重設回日期區間模式
+            tabDateRange.click();
         });
     </script>
 </body>
