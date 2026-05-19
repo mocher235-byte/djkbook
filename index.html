@@ -434,13 +434,13 @@
                         <!-- 姓名 -->
                         <div>
                             <label class="block text-slate-750 font-medium mb-2 text-sm" for="student-name">學生姓名 <span class="text-red-500">*</span></label>
-                            <input type="text" id="student-name" required placeholder="請輸入姓名"
+                            <input type="text" id="student-name" name="student-name" required placeholder="請輸入姓名"
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
                         </div>
                         <!-- 年級 -->
                         <div>
                             <label class="block text-slate-750 font-medium mb-2 text-sm" for="student-grade">學生年級 <span class="text-red-500">*</span></label>
-                            <select id="student-grade" required
+                            <select id="student-grade" name="student-grade" required
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition bg-white">
                                 <option value="" disabled selected>請選擇年級</option>
                                 <option value="國小/其他">國小 / 其他</option>
@@ -455,7 +455,7 @@
                         <!-- 電話 -->
                         <div>
                             <label class="block text-slate-750 font-medium mb-2 text-sm" for="parent-phone">家長聯絡電話 <span class="text-red-500">*</span></label>
-                            <input type="tel" id="parent-phone" required placeholder="例如：0912345678"
+                            <input type="tel" id="parent-phone" name="parent-phone" required placeholder="例如：0912345678"
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
                         </div>
                     </div>
@@ -482,12 +482,12 @@
                     <div id="date-range-panel" class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-slate-750 font-medium mb-2 text-sm" for="reserve-start-date">開始日期</label>
-                            <input type="date" id="reserve-start-date"
+                            <input type="date" id="reserve-start-date" name="reserve-start-date"
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
                         </div>
                         <div>
                             <label class="block text-slate-750 font-medium mb-2 text-sm" for="reserve-end-date">結束日期 (單日預約可與開始日期相同)</label>
-                            <input type="date" id="reserve-end-date"
+                            <input type="date" id="reserve-end-date" name="reserve-end-date"
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
                         </div>
                     </div>
@@ -535,7 +535,7 @@
                     <div class="grid md:grid-cols-2 gap-6 items-start">
                         <div>
                             <label class="block text-slate-750 font-medium mb-2 text-sm" for="reserve-time">預約自修時段 / 時間區段</label>
-                            <input type="text" id="reserve-time" required placeholder="例如：平日 09:00~16:00 或 週二 18:00~21:00"
+                            <input type="text" id="reserve-time" name="reserve-time" required placeholder="例如：平日 09:00~16:00 或 週二 18:00~21:00"
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
                             
                             <!-- 週二智慧提示（動態顯示） -->
@@ -636,7 +636,7 @@
                 <!-- 備註欄位 -->
                 <div>
                     <label class="block text-slate-750 font-medium mb-2 text-sm" for="parent-note">特殊需求 / 備註說明（選填）</label>
-                    <textarea id="parent-note" rows="3" placeholder="如有特定的學科指導需求、期望加強的單元，或攜帶特定學習用書，請在這邊告訴我們..."
+                    <textarea id="parent-note" name="parent-note" rows="3" placeholder="如有特定的學科指導需求、期望加強的單元，或攜帶特定學習用書，請在這邊告訴我們..."
                         class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"></textarea>
                 </div>
 
@@ -737,6 +737,37 @@
 
     <!-- 網頁互動 Script -->
     <script>
+        // 0. 自訂高級 Toast 通知系統 (免除 alert() 警告)
+        function showToast(message, type = 'error') {
+            const existingToast = document.getElementById('custom-toast');
+            if (existingToast) existingToast.remove();
+
+            const toast = document.createElement('div');
+            toast.id = 'custom-toast';
+            toast.className = `fixed bottom-6 right-6 z-50 flex items-center gap-3 px-6 py-4 rounded-2xl shadow-2xl border transition-all duration-350 transform translate-y-4 opacity-0`;
+            
+            if (type === 'success') {
+                toast.className += ' bg-emerald-50 border-emerald-100 text-emerald-900';
+                toast.innerHTML = `<span class="text-xl">✓</span> <span class="font-medium">${message}</span>`;
+            } else {
+                toast.className += ' bg-rose-50 border-rose-100 text-rose-900';
+                toast.innerHTML = `<span class="text-xl">⚠️</span> <span class="font-medium">${message}</span>`;
+            }
+            
+            document.body.appendChild(toast);
+            
+            // 開啟動畫
+            setTimeout(() => {
+                toast.classList.remove('translate-y-4', 'opacity-0');
+            }, 50);
+
+            // 4秒後自動滑出並刪除
+            setTimeout(() => {
+                toast.classList.add('translate-y-4', 'opacity-0');
+                setTimeout(() => toast.remove(), 350);
+            }, 4000);
+        }
+
         // 1. 滾動時導覽列陰影效果
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
@@ -850,20 +881,21 @@
             document.getElementById('reserve-time').value = val;
         }
 
-        // 6. 表單送出處理
+        // 6. 表單送出處理 (與 Formspree API 串接)
         const form = document.getElementById('reservation-form');
         const modal = document.getElementById('booking-modal');
         const modalSummary = document.getElementById('modal-summary');
         const copyHelper = document.getElementById('copy-helper');
         const btnCopy = document.getElementById('btn-copy');
         const btnCloseModal = document.getElementById('btn-close-modal');
+        const btnSubmit = form.querySelector('button[type="submit"]');
 
         let formattedTextForCopy = "";
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // 取得根本資料
+            // 取得基本資料
             const name = document.getElementById('student-name').value;
             const grade = document.getElementById('student-grade').value;
             const phone = document.getElementById('parent-phone').value;
@@ -877,7 +909,7 @@
                 const end = reserveEndDateInput.value;
                 
                 if (!start) {
-                    alert("請選擇預約開始日期！");
+                    showToast("請選擇預約開始日期！", "error");
                     return;
                 }
                 
@@ -895,7 +927,7 @@
                 });
 
                 if (selectedDays.length === 0) {
-                    alert("請至少選擇一個每週固定的自修天數！");
+                    showToast("請至少選擇一個每週固定的自修天數！", "error");
                     return;
                 }
                 dateDisplay = `每週固定天數：${selectedDays.join('、')}`;
@@ -914,7 +946,6 @@
             });
 
             if (selectedServices.length === 0) {
-                // 如果沒有勾選服務，預設為自學閱讀教室
                 selectedServices.push('閱讀教室（自修）');
             }
 
@@ -925,35 +956,81 @@
                 selectedMeals.push(cb.value);
             });
 
-            // 組成網頁 Modal 預約總覽
-            let summaryHTML = `
-                <p><strong>學生姓名：</strong> ${name}</p>
-                <p><strong>學生年級：</strong> ${grade}</p>
-                <p><strong>家長電話：</strong> ${phone}</p>
-                <p><strong>預約日期：</strong> ${dateDisplay}</p>
-                <p><strong>預約時段：</strong> ${time}</p>
-                <p><strong>預約服務：</strong><br><span class="text-indigo-600 font-semibold">• ${selectedServices.join('<br>• ')}</span></p>
-                <p><strong>加購餐點：</strong> ${selectedMeals.length > 0 ? selectedMeals.join('、') : '無加購'}</p>
-                ${note ? `<p><strong>備註說明：</strong> ${note}</p>` : ''}
-            `;
+            // 設為發送中狀態
+            btnSubmit.disabled = true;
+            btnSubmit.innerHTML = "正在傳送預約... ⏳";
 
-            // 組成 LINE 複製純文字範本 (扣點好康提醒)
-            formattedTextForCopy = `【金名德晉補習班 暑期預約確認單】\n`;
-            formattedTextForCopy += `學生姓名：${name}\n`;
-            formattedTextForCopy += `學生年級：${grade}\n`;
-            formattedTextForCopy += `聯絡電話：${phone}\n`;
-            formattedTextForCopy += `預約日期：${dateDisplay}\n`;
-            formattedTextForCopy += `預約時段：${time}\n`;
-            formattedTextForCopy += `預約服務：${selectedServices.join('、')}\n`;
-            formattedTextForCopy += `點數加購餐點：${selectedMeals.length > 0 ? selectedMeals.join('、') : '無'}\n`;
-            if (note) formattedTextForCopy += `家長備註：${note}\n`;
-            formattedTextForCopy += `--------------------------\n`;
-            formattedTextForCopy += `※ 本班採「儲值扣點制（1000元=10點）」，餘點可隨時按比例退費或轉學費折抵。每次使用後均會於 Line 主動通報剩餘點數，保障家長權益。送出後我們將主動與您聯絡核對時間與剩餘點數細節！`;
+            // 組成發送給 Formspree 的 Payload 資料結構
+            const payload = {
+                "學生姓名": name,
+                "學生年級": grade,
+                "聯絡電話": phone,
+                "預約日期": dateDisplay,
+                "預約時段": time,
+                "希望服務項目": selectedServices.join('、'),
+                "加購餐點": selectedMeals.length > 0 ? selectedMeals.join('、') : '無',
+                "家長備註說明": note || '無'
+            };
 
-            // 寫入並開啟彈窗
-            modalSummary.innerHTML = summaryHTML;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // 鎖定底層滾動
+            // 使用 fetch 將資料以 AJAX POST 送出至您的 Formspree Endpoint
+            fetch("https://formspree.io/f/xojbvlog", {
+                method: "POST",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // 1. 組成網頁 Modal 預約總覽
+                    let summaryHTML = `
+                        <p><strong>學生姓名：</strong> ${name}</p>
+                        <p><strong>學生年級：</strong> ${grade}</p>
+                        <p><strong>家長電話：</strong> ${phone}</p>
+                        <p><strong>預約日期：</strong> ${dateDisplay}</p>
+                        <p><strong>預約時段：</strong> ${time}</p>
+                        <p><strong>預約服務：</strong><br><span class="text-indigo-600 font-semibold">• ${selectedServices.join('<br>• ')}</span></p>
+                        <p><strong>加購餐點：</strong> ${selectedMeals.length > 0 ? selectedMeals.join('、') : '無加購'}</p>
+                        ${note ? `<p><strong>備註說明：</strong> ${note}</p>` : ''}
+                    `;
+
+                    // 2. 組成 LINE 複製純文字範本
+                    formattedTextForCopy = `【金名德晉補習班 暑期預約確認單】\n`;
+                    formattedTextForCopy += `學生姓名：${name}\n`;
+                    formattedTextForCopy += `學生年級：${grade}\n`;
+                    formattedTextForCopy += `聯絡電話：${phone}\n`;
+                    formattedTextForCopy += `預約日期：${dateDisplay}\n`;
+                    formattedTextForCopy += `預約時段：${time}\n`;
+                    formattedTextForCopy += `預約服務：${selectedServices.join('、')}\n`;
+                    formattedTextForCopy += `點數加購餐點：${selectedMeals.length > 0 ? selectedMeals.join('、') : '無'}\n`;
+                    if (note) formattedTextForCopy += `家長備註：${note}\n`;
+                    formattedTextForCopy += `--------------------------\n`;
+                    formattedTextForCopy += `※ 本班採「儲值扣點制（1000元=10點）」，餘點可隨時按比例退費或轉學費折抵。每次使用後均會於 Line 主動通報剩餘點數，保障家長權益。`;
+
+                    // 3. 寫入並開啟成功彈窗
+                    modalSummary.innerHTML = summaryHTML;
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // 鎖定底層滾動
+                    showToast("預約傳送成功！已同步發送至補習班系統。", "success");
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            showToast("預約失敗: " + data["errors"].map(error => error["message"]).join(", "), "error");
+                        } else {
+                            showToast("系統目前無法處理，請直接撥打電話進行預約！", "error");
+                        }
+                    });
+                }
+            })
+            .catch(error => {
+                showToast("連線發生異常，請檢查您的網路，或直接撥打補習班專線預約！", "error");
+            })
+            .finally(() => {
+                // 還原按鈕狀態
+                btnSubmit.disabled = false;
+                btnSubmit.innerHTML = "送出預約資料 🚀";
+            });
         });
 
         // 7. 一鍵複製功能 (相容 iframe 安全機制)
@@ -975,10 +1052,10 @@
                         btnCopy.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
                     }, 2500);
                 } else {
-                    alert("複製失敗，請手動複製。");
+                    showToast("複製失敗，請手動複製。", "error");
                 }
             } catch (err) {
-                alert("此瀏覽器不支援一鍵複製，請手動圈選複製摘要內容。");
+                showToast("此瀏覽器不支援一鍵複製，請手動圈選複製摘要內容。", "error");
             }
         });
 
