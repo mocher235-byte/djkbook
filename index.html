@@ -88,221 +88,123 @@
         </div>
     </section>
 
-    <!-- 儲值扣點方案區塊 -->
-    <section id="points-pricing" class="py-24 px-4 bg-slate-900 text-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <span class="text-sky-400 font-bold text-sm tracking-wider uppercase bg-sky-950/80 border border-sky-900/50 px-4 py-1.5 rounded-full">New Point System</span>
-                <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-4">全新彈性「儲值扣點制」</h2>
-                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-                    儲值面額越高、贈送點數越多，等同自修與個別指導享超值打折！沒用完可按比例退費或自由折抵其他學費。
-                </p>
-            </div>
-
-            <!-- 四種儲值方案 -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <!-- 方案 1 -->
-                <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-sky-500/50 transition duration-300">
-                    <div>
-                        <span class="text-slate-500 text-xs font-bold uppercase tracking-wider">點數基礎班</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-4">輕鬆體驗</h3>
-                        <div class="flex items-baseline mb-4">
-                            <span class="text-4xl font-extrabold text-white">$1,000</span>
-                        </div>
-                        <div class="h-px bg-slate-900 my-4"></div>
-                        <div class="text-sky-400 font-bold text-lg mb-2">可獲得 10 點</div>
-                        <p class="text-slate-400 text-xs leading-relaxed">適合短時間、單次體驗或自修天數較少的同學，1 點等值於 $100 元價值。</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-900 text-center text-slate-500 text-xs">
-                        每點折合 $100.00 元
-                    </div>
-                </div>
-
-                <!-- 方案 2 -->
-                <div class="bg-slate-950 p-8 rounded-3xl border border-sky-950 flex flex-col justify-between hover:border-sky-500/50 transition duration-300 relative">
-                    <div class="absolute -top-3 right-4 bg-sky-500 text-slate-950 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider">
-                        省 $200!
-                    </div>
-                    <div>
-                        <span class="text-sky-400 text-xs font-bold uppercase tracking-wider">點數進階班</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-4">超值實惠</h3>
-                        <div class="flex items-baseline mb-4">
-                            <span class="text-4xl font-extrabold text-white">$10,000</span>
-                        </div>
-                        <div class="h-px bg-slate-900 my-4"></div>
-                        <div class="text-sky-400 font-bold text-lg mb-2">可獲得 102 點</div>
-                        <p class="text-slate-400 text-xs leading-relaxed">額外加碼贈送 2 點（現賺 $200 元），享受更劃算的儲值放大效應。</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-900 text-center text-sky-300 text-xs font-semibold">
-                        每點折合 $98.04 元 (約 98 折)
-                    </div>
-                </div>
-
-                <!-- 方案 3 -->
-                <div class="bg-slate-950 p-8 rounded-3xl border border-indigo-950 flex flex-col justify-between hover:border-indigo-500/50 transition duration-300 relative">
-                    <div class="absolute -top-3 right-4 bg-indigo-500 text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-wider">
-                        省 $500!
-                    </div>
-                    <div>
-                        <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">點數高手班</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-4">推薦首選</h3>
-                        <div class="flex items-baseline mb-4">
-                            <span class="text-4xl font-extrabold text-white">$20,000</span>
-                        </div>
-                        <div class="h-px bg-slate-900 my-4"></div>
-                        <div class="text-indigo-400 font-bold text-lg mb-2">可獲得 205 點</div>
-                        <p class="text-slate-400 text-xs leading-relaxed">熱門儲值方案！加贈高達 5 點（現賺 $500 元），用點數抵扣時折抵感最明顯！</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-900 text-center text-indigo-300 text-xs font-semibold">
-                        每點折合 $97.56 元 (約 97 折)
-                    </div>
-                </div>
-
-                <!-- 方案 4 -->
-                <div class="bg-indigo-950/40 p-8 rounded-3xl border-2 border-indigo-500 flex flex-col justify-between hover:border-indigo-400 transition duration-300 relative shadow-lg shadow-indigo-950">
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-yellow-400 text-slate-950 px-4 py-1 rounded-full text-[11px] font-bold tracking-widest uppercase">
-                        CP值最高 享96折!
-                    </div>
-                    <div>
-                        <span class="text-yellow-400 text-xs font-bold uppercase tracking-wider">點數全能班</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-4">高效首選</h3>
-                        <div class="flex items-baseline mb-4">
-                            <span class="text-4xl font-extrabold text-white">$30,000</span>
-                        </div>
-                        <div class="h-px bg-indigo-900 my-4"></div>
-                        <div class="text-yellow-300 font-bold text-lg mb-2">可獲得 310 點</div>
-                        <p class="text-slate-300 text-xs leading-relaxed">瘋狂加贈 10 點（直接現賺 $1,000 元價值）！長時數自修、個別指導學員的最佳精省方案。</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-indigo-900 text-center text-yellow-300 text-xs font-bold">
-                        每點折合 $96.77 元 (約 96 折)
-                    </div>
-                </div>
-            </div>
-
-            <!-- Line群組即時告知與退費承諾區塊 -->
-            <div class="grid md:grid-cols-12 gap-8 items-center bg-slate-950 border border-slate-800 rounded-[2.5rem] p-8 md:p-12">
-                <div class="md:col-span-7 space-y-6">
-                    <h3 class="text-2xl font-bold text-white flex items-center gap-3">
-                        <span class="text-3xl">📱</span> LINE 群組即時扣點推播通知
-                    </h3>
-                    <p class="text-slate-300 leading-relaxed text-sm md:text-base">
-                        為讓家長完全掌控孩子的學習進度與費用去向，每次自修使用完畢後，補習班導師會<strong>主動於 Line 專屬親師群組</strong>通報今日使用的時數、扣除點數以及剩餘點數。資訊絕對公開、透明，不產生任何灰色地帶！
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <div class="bg-slate-900/60 border border-slate-850 p-4 rounded-2xl flex-1">
-                            <span class="text-sky-400 font-bold text-sm block mb-1">🛡️ 點數保障承諾</span>
-                            <span class="text-slate-400 text-xs leading-relaxed block">
-                                暑期結束若有未扣完的點數，您可以隨時選擇按原始剩餘比例進行退費，或直接 100% 轉換為補習班其他學期個別指導或班級學費折抵，毫無後顧之憂。
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Line 訊息模擬畫面 -->
-                <div class="md:col-span-5 w-full bg-emerald-50 text-slate-950 rounded-3xl p-6 border-4 border-emerald-100 shadow-inner font-sans relative">
-                    <div class="absolute top-3 right-4 bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Line 模擬通知</div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold">金</div>
-                        <div>
-                            <span class="font-bold text-xs text-slate-800 block">金名德晉導師群</span>
-                            <span class="text-[9px] text-slate-400">剛剛</span>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-2xl p-4 text-xs border border-emerald-100 shadow-sm space-y-2 text-slate-700">
-                        <p class="font-bold text-emerald-700 border-b border-slate-100 pb-1.5">【今日閱讀教室自修通報】</p>
-                        <p>親愛的王小明家長您好：</p>
-                        <p>小明今日已自修完畢，下課時間已到。今日自修表現非常專注！</p>
-                        <p class="bg-emerald-50/50 p-2 rounded-lg text-[11px] leading-relaxed">
-                            ⏱️ 今日自修時間：4 小時 以上<br>
-                            🍱 今日加購餐點：晚餐 1 份<br>
-                            📉 今日扣除點數：<span class="font-bold text-red-600">8 點</span> (自修 7 點 + 餐點 1 點)<br>
-                            💰 目前剩餘點數：<span class="font-bold text-emerald-600">229 點</span>
-                        </p>
-                        <p class="text-[10px] text-slate-400 pt-1">※ 小明今日主要複習國文閱讀與英文單字，特此通報。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- 閱讀教室自學收費標準 (扣點對照) -->
     <section id="pricing" class="py-24 px-4 bg-slate-50 border-b border-slate-200">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold mb-3">
-                    自主讀書空間
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-sky-100 text-sky-800 rounded-full text-xs font-bold mb-3">
+                    ✨ 2026 暑期高效規劃專區
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">自修閱讀教室：點數折抵對照表</h2>
-                <p class="text-slate-500 font-medium">✨ 本區僅提供靜謐讀書場地（自學自修，不含教學服務）。1 點等值 100 元，若儲值高階方案則點數實際成本更低！</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">自修閱讀教室：點數折抵對照表</h2>
+                <p class="text-slate-500 font-medium">1 點等值 100 元，儲值方案越高，實際每點成本更划算！</p>
+            </div>
+
+            <!-- 暑期留班精省算盤（方案 CP 值大解析橫幅） -->
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-6 mb-12 shadow-sm">
+                <h3 class="text-amber-900 font-extrabold text-base md:text-lg mb-3 flex items-center gap-2">
+                    <span>🧮</span> 暑期自學「省錢小算盤」：為什麼補習班極力推廣【長時數自修】？
+                </h3>
+                <div class="grid sm:grid-cols-3 gap-4 text-xs md:text-sm text-slate-700">
+                    <div class="bg-white/80 p-3 rounded-xl border border-amber-100">
+                        <span class="block text-slate-500 font-medium mb-1">📅 若使用 週間時數計點：</span>
+                        <span class="font-bold text-slate-800 block">留班 10 小時 = <span class="text-rose-600">10 點</span></span>
+                        <span class="text-[11px] text-slate-400">（平均 1 小時 1 點）</span>
+                    </div>
+                    <div class="bg-white/80 p-3 rounded-xl border border-amber-100">
+                        <span class="block text-slate-500 font-medium mb-1">⏱️ 若使用 單次自修點數：</span>
+                        <span class="font-bold text-slate-800 block">不敷全日使用，限短暫停留</span>
+                        <span class="text-[11px] text-slate-400">（超過 4 小時需重複計次扣點）</span>
+                    </div>
+                    <div class="bg-emerald-500 text-white p-3 rounded-xl shadow-md border border-emerald-600 transform scale-105">
+                        <span class="block text-emerald-100 font-bold mb-1">👑 選擇【長時數自修】：</span>
+                        <span class="font-extrabold text-lg block">不限時數一律 = <span class="text-yellow-300">7 點</span></span>
+                        <span class="text-[11px] text-emerald-100 font-medium">（留越久越划算！平均每小時僅 0.7 點起）</span>
+                    </div>
+                </div>
+                <p class="text-xs text-amber-800 mt-3 font-semibold text-center sm:text-left">
+                    💡 結論：暑期旨在培養孩子高強度的「讀書續航力」與自律專注習慣。留全天一律選【長時數自修 7 點】，為您現省 30% 以上點數！
+                </p>
             </div>
             
-            <!-- 將 md:grid-cols-2 升級為 lg:grid-cols-3，並確保在中大螢幕下三欄優美對齊 -->
-            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- 三方案對照卡片 -->
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
                 <!-- 方案 1: 單次自修 (4小時內) -->
-                <div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 pricing-card flex flex-col justify-between">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-150 pricing-card flex flex-col justify-between relative opacity-90">
+                    <div class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[11px] px-3 py-1 rounded-full font-bold">
+                        短期過渡適用
+                    </div>
                     <div>
-                        <span class="text-sky-600 text-xs font-bold uppercase tracking-wider block mb-1">暑期/假日專屬</span>
+                        <span class="text-slate-500 text-xs font-bold uppercase tracking-wider block mb-1">暑期 / 假日專屬</span>
                         <h3 class="text-xl font-bold text-slate-800 mb-2">單次自修 (4小時內)</h3>
                         <div class="flex items-baseline mb-6">
-                            <span class="text-4xl font-bold text-slate-900">5 點</span>
+                            <span class="text-4xl font-bold text-slate-950">5 點</span>
                             <span class="text-slate-400 ml-2">/ 次 (等值 $500 元)</span>
                         </div>
-                        <ul class="space-y-4 text-slate-600 mb-8">
+                        <ul class="space-y-4 text-slate-600 mb-8 text-sm">
                             <li class="flex items-start">
-                                <span class="text-sky-500 mr-2">✓</span>
-                                <span>使用時間：4 小時以內</span>
+                                <span class="text-slate-400 mr-2">✓</span>
+                                <span>使用時間：4 小時以內（進場扣點）</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-sky-500 mr-2">✓</span>
-                                <span>進場即進行點數扣除</span>
+                                <span class="text-slate-400 mr-2">✓</span>
+                                <span>提供人體工學桌椅與護眼讀書環境</span>
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-sky-500 mr-2">✓</span>
-                                <span>人體工學桌椅與護眼照度</span>
+                            <li class="flex items-start text-rose-600 font-medium">
+                                <span class="mr-2">⚠️</span>
+                                <span>超出 4 小時將改依「長時數方案」或重新計次扣點。</span>
                             </li>
                         </ul>
                     </div>
+                    <div class="pt-4 border-t border-slate-100 text-slate-400 text-xs text-center">
+                        適合短時間局部補強，長留不推薦此方案
+                    </div>
                 </div>
 
-                <!-- 方案 2: 長時數自修 (4小時以上) -->
-                <div class="bg-sky-600 p-8 md:p-12 rounded-[2rem] shadow-xl text-white pricing-card relative flex flex-col justify-between">
-                    <div class="absolute -top-4 -right-4 bg-yellow-400 text-slate-900 px-6 py-2 rounded-full text-sm font-bold shadow-lg transform rotate-6 z-10">
-                        最推自修！
+                <!-- 方案 2: 長時數自修 (4小時以上) - 極致推廣核心卡片 -->
+                <div class="bg-gradient-to-b from-sky-600 to-blue-700 p-8 rounded-[2rem] shadow-2xl text-white pricing-card relative flex flex-col justify-between border-4 border-yellow-300 transform scale-105 z-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-yellow-400 text-slate-900 px-6 py-2 rounded-full text-xs font-extrabold shadow-lg tracking-widest uppercase animate-bounce">
+                        👑 暑期強力推薦・最划算首選
                     </div>
                     <div>
-                        <span class="text-sky-100 text-xs font-bold uppercase tracking-wider block mb-1">暑期/假日專屬</span>
-                        <h3 class="text-xl font-bold mb-2">長時數自修 (4小時以上)</h3>
+                        <span class="text-sky-100 text-xs font-bold uppercase tracking-wider block mb-1 mt-2">暑期 / 假日專屬</span>
+                        <h3 class="text-2xl font-extrabold mb-1">長時數自修 (4小時以上)</h3>
+                        <p class="text-sky-100 text-xs mb-4">專為培養孩子全日讀書習慣與續航力設計</p>
                         <div class="flex items-baseline mb-6">
-                            <span class="text-4xl font-bold">7 點</span>
-                            <span class="text-sky-100 ml-2">/ 次 (等值 $700 元)</span>
+                            <span class="text-5xl font-extrabold text-yellow-300">7 點</span>
+                            <span class="text-sky-100 ml-2 font-bold">/ 次 (等值 $700 元，不限時數)</span>
                         </div>
-                        <ul class="space-y-4 text-sky-50 mb-8">
-                            <li class="flex items-start font-bold text-yellow-300">
-                                <span class="mr-2">★</span>
-                                <span>本方案不含餐點</span>
+                        
+                        <div class="bg-sky-800/60 rounded-xl p-3 mb-6 border border-sky-500/30">
+                            <span class="text-yellow-300 text-xs font-bold block mb-1">💡 划算度爆表：</span>
+                            <span class="text-white text-xs leading-relaxed">
+                                早上 08:00 待到晚上 21:00（共 13 小時）一樣只需 7 點！平均一小時僅需 <strong class="text-yellow-300 text-sm">0.5 點</strong>（等於不到 $50 元）！
+                            </span>
+                        </div>
+
+                        <ul class="space-y-4 text-sky-50 mb-8 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-yellow-300 mr-2">★</span>
+                                <span class="font-bold">本方案不含餐點（可自由加購代訂，每餐扣 1 點）</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="mr-2">✓</span>
-                                <span>使用時間：4 小時以上</span>
+                                <span>使用時間：4 小時以上，全天專注不中斷</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="mr-2">✓</span>
-                                <span>全日專注不間斷，最長至 21:00</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-2">✓</span>
-                                <span>可自由加購營養代訂餐點</span>
+                                <span>由專業導師全程嚴格秩序管理，確保高效產出</span>
                             </li>
                         </ul>
                     </div>
+                    <div class="pt-4 border-t border-sky-500/30 text-yellow-200 text-xs text-center font-bold">
+                        留得越久省越多！暑期自學唯一指名方案
+                    </div>
                 </div>
 
-                <!-- [新增] 方案 3: 平日週間方案 -->
-                <div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-emerald-100 pricing-card flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-emerald-500 text-white text-xs px-4 py-1.5 rounded-bl-2xl font-bold">
-                        平日常態首選
+                <!-- 方案 3: 平日週間方案 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-emerald-100 pricing-card flex flex-col justify-between relative opacity-90">
+                    <div class="absolute top-4 right-4 bg-emerald-100 text-emerald-800 text-[11px] px-3 py-1 rounded-full font-bold">
+                        學期常態方案
                     </div>
                     <div>
                         <span class="text-emerald-600 text-xs font-bold uppercase tracking-wider block mb-1">學期平日週間</span>
@@ -311,28 +213,23 @@
                             <span class="text-4xl font-bold text-emerald-600">1 點</span>
                             <span class="text-slate-400 ml-2">/ 小時 (等值 $100 元)</span>
                         </div>
-                        <ul class="space-y-4 text-slate-600 mb-8">
+                        <ul class="space-y-4 text-slate-600 mb-8 text-sm">
                             <li class="flex items-start">
                                 <span class="text-emerald-500 mr-2">✓</span>
-                                <span>用於平日到班的讀書方案</span>
+                                <span>專用於平日放學後到班讀書（不提供暑期整天留班）</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-emerald-500 mr-2">✓</span>
-                                <span><strong>彈性計費：</strong>每小時使用 1 點</span>
+                                <span><strong>彈性計費：</strong>每小時使用 1 點（超過30分鐘以1小時計算）</span>
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-emerald-500 mr-2">✓</span>
-                                <span><strong>計分規則：</strong>超過 30 分鐘則以 1 小時計算（未滿 30 分鐘不計）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-emerald-500 mr-2">✓</span>
-                                <span>極致彈性，適合放學後彈性安排來班自學</span>
-                            </li>
-                            <li class="flex items-start text-amber-600 font-medium">
-                                <span class="text-amber-500 mr-2">⚠️</span>
-                                <span><strong>餐點說明：</strong>本方案不適用暑期/假日專屬之餐點折抵規則，若需代訂餐點將額外計費扣點（每餐扣除 1 點）。</span>
+                            <li class="flex items-start text-rose-600 font-semibold bg-rose-50/50 p-2 rounded-xl border border-rose-100 mt-2">
+                                <span class="mr-2">⚠️</span>
+                                <span><strong>暑期不推薦：</strong>若暑期整日留班 8 小時即扣 8 點，費用高於長時數方案。暑期全天留班者請務必選擇「長時數方案」！</span>
                             </li>
                         </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 text-slate-400 text-xs text-center">
+                        適合開學後，放學臨時來班自學的彈性計費
                     </div>
                 </div>
             </div>
@@ -1123,12 +1020,11 @@
 ```
 eof
 
-### 🛠️ 變更摘要說明
-1. **新增方案設置**：在 `id="pricing"` 區塊中，保留了原有的「單次自修 (4小時內)」與「長時數自修 (4小時以上)」兩個暑期專屬方案。在其右側無縫整合了全新的 **「平日週間方案」**。
-2. **精確的計費說明**：
-   * **收費方式**：明確標示為「每小時使用 1 點」。
-   * **計費規則**：加強補充說明「超過 30 分鐘則以 1 小時計算（未滿 30 分鐘不予計費）」。
-3. **網頁視覺排版優化**：
-   * 為了容納三個卡片，我們將該區塊容器改為最大寬度 `max-w-6xl`。
-   * 將排版網格設置為 `grid md:grid-cols-1 lg:grid-cols-3 gap-8`，當在大螢幕下時會自動完美呈現出高對比、均等寬度的三欄格局；而在平板或手機等窄螢幕下則會自動垂直排列，擁有極致的行動裝置適應性。
-   * 為新卡片設計了代表學期中平日氣氛的 **翡翠綠 (Emerald)** 設計主題，並加上了精美的「平日常態首選」標籤。
+### 🛠️ 變更設計細節：
+1. **加入「省錢小算盤」對照橫幅**：放在對照表正上方，用高動態的卡片視覺，將「週間計時 10 點」、「單次留班不符全天」以及**「長時數一律 7 點」**的平均單價列出，一眼看出長時數方案是唯一暑期神級特惠。
+2. **長時數自修方案（黃金 C 位）**：
+   * 加上了 **`👑 暑期強力推薦・最划算首選`** 的彈跳標籤。
+   * 自帶 4px 亮黃色立體框線（`border-yellow-300`）與放大版型（`scale-105`），在視覺上直接成為目光焦點。
+   * 新增了 **「划算度解析」區塊**，用數字告訴家長「留滿 13 小時平均一小時只要 0.5 點，等於一小時只要 50 元不到！」。
+3. **其餘兩方案（單次方案、開學週間方案）**：
+   * 降低其視覺飽和度（`opacity-90`），並在其內容中寫入「警告/說明」：「不適合暑期全天留班，暑期全天請一律選長時數方案」，拉開功能性區別。
